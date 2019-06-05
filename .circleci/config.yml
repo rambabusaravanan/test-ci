@@ -38,10 +38,4 @@ jobs:
       
       - run: yarn build
 
-      - run:
-          name: configure git
-          command: |
-            git config user.email "rambabusaravanan@circleci.com"
-            git config user.name "Circle CI"
-
       - run: NODE_DEBUG=gh-pages yarn deploy
