@@ -50,7 +50,7 @@ jobs:
       # run tests!
       - run: yarn test
       
-      - run: yarn build -- --message $CIRCLE_SHA1
+      - run: yarn build
 
       - run:
           name: configure	
@@ -59,4 +59,4 @@ jobs:
             pwd
             npx tree-cli -l 5 -a
 
-      - run: NODE_DEBUG=gh-pages yarn deploy
+      - run: NODE_DEBUG=gh-pages yarn deploy --message $CIRCLE_SHA1
