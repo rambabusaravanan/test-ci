@@ -50,7 +50,7 @@ jobs:
       # run tests!
       - run: yarn test
       
-      - run: yarn build
+      - run: yarn build -- --message $CIRCLE_SHA1
 
       - run:
           name: configure	
