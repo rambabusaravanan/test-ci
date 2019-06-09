@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Start ReactJS
+          Start React JS
         </a>
       </header>
     </div>
