@@ -55,6 +55,8 @@ jobs:
       - run:
           name: configure	
           command: | 
-            npx tree-cli build -l 5 -a
+            cd build
+            pwd
+            npx tree-cli -l 5 -a
 
       - run: NODE_DEBUG=gh-pages yarn deploy
